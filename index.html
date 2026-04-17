@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdullahi Jamal — Software Developer specialising in PHP, Symfony, JavaScript, automation, and full-stack web development.">
+  <title>Abdullahi Jamal — Software Developer</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="logo">AJ<span class="logo-dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-name">Abdullahi Jamal</h1>
+
+      <div class="hero-role">
+        <span class="role-prefix">I'm a&nbsp;</span>
+        <span class="role-text" id="roleText">Software Developer</span><span class="cursor">|</span>
+      </div>
+
+      <p class="hero-description">
+        Versatile Software Developer and Technical Support professional with hands-on experience
+        in PHP, Symfony, full-stack web development, and production support. Passionate about
+        automation, AI-powered tooling, and building things that matter.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">About</div>
+        <h2 class="section-title">A bit about me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar-side reveal-left">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar">AJ</div>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:abdullahijamal08@gmail.com" class="social-link" aria-label="Email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/abdullahijamal" class="social-link" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/abdullahijamal" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://culinarycompass.co.uk" class="social-link" target="_blank" rel="noopener" aria-label="Portfolio site" title="CulinaryCompass">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-text-side reveal-right">
+          <p>
+            I'm a Software Developer and Technical Support professional with a strong grounding
+            in PHP-based backend development, currently working on a Symfony e-commerce platform.
+            My day-to-day spans developing features, investigating live incidents, monitoring
+            business-critical systems, and collaborating with stakeholders to turn requirements
+            into clean, working code.
+          </p>
+          <p>
+            Alongside my professional work, I independently built
+            <strong style="color:var(--primary)">Culinary Compass</strong> — an AI-powered recipe
+            and meal planning platform — demonstrating initiative in Python/AI integration,
+            full-stack development, and product ownership end to end.
+          </p>
+          <p>
+            I'm particularly interested in roles that blend development, low-code automation, and
+            business process improvement. I care about writing code that solves real problems and
+            scales gracefully.
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Skills</div>
+        <h2 class="section-title">Technologies &amp; Tools</h2>
+      </div>
+
+      <div class="skills-categories">
+        <div class="skill-category reveal stagger-1">
+          <div class="skill-category-title"><i class="fas fa-code"></i> Development</div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-php"></i> PHP</span>
+            <span class="skill-pill"><i class="fab fa-symfony"></i> Symfony</span>
+            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fas fa-leaf"></i> Twig</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal stagger-2">
+          <div class="skill-category-title"><i class="fas fa-server"></i> Infrastructure &amp; Tools</div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-pill"><i class="fab fa-aws"></i> AWS (basic)</span>
+            <span class="skill-pill"><i class="fas fa-fire"></i> Nagios</span>
+            <span class="skill-pill"><i class="fab fa-atlassian"></i> Jira</span>
+            <span class="skill-pill"><i class="fas fa-lamp"></i> LAMP Stack</span>
+            <span class="skill-pill"><i class="fas fa-chart-bar"></i> Excel</span>
+            <span class="skill-pill"><i class="fas fa-network-wired"></i> REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal stagger-3">
+          <div class="skill-category-title"><i class="fas fa-briefcase"></i> Practices &amp; Soft Skills</div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fas fa-robot"></i> Automation</span>
+            <span class="skill-pill"><i class="fas fa-users"></i> Stakeholder Comms</span>
+            <span class="skill-pill"><i class="fas fa-bug"></i> Incident Investigation</span>
+            <span class="skill-pill"><i class="fas fa-flask"></i> QA &amp; Testing</span>
+            <span class="skill-pill"><i class="fas fa-file-alt"></i> Documentation</span>
+            <span class="skill-pill"><i class="fas fa-chart-line"></i> Process Improvement</span>
+            <span class="skill-pill"><i class="fas fa-brain"></i> Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Projects</div>
+        <h2 class="section-title">Things I've built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- FEATURED — CulinaryCompass -->
+        <div class="project-card project-featured reveal">
+          <div class="project-preview">
+            <!-- Browser Mockup of CulinaryCompass -->
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <div class="browser-dots">
+                  <div class="dot dot-red"></div>
+                  <div class="dot dot-yellow"></div>
+                  <div class="dot dot-green"></div>
+                </div>
+                <div class="browser-url">
+                  <i class="fas fa-lock"></i>
+                  culinarycompass.co.uk
+                </div>
+              </div>
+
+              <!-- Simulated site content -->
+              <div class="cc-site">
+                <div class="cc-nav-bar">
+                  <div class="cc-brand">🧭 Culinary Compass</div>
+                  <div class="cc-nav-items">
+                    <span>Recipes</span>
+                    <span>Planner</span>
+                    <span>Pantry</span>
+                    <span class="cc-ai-pill">✦ AI</span>
+                  </div>
+                </div>
+
+                <div class="cc-hero-area">
+                  <div class="cc-hero-left">
+                    <div class="cc-tag-badge">AI-Powered Recipe Discovery</div>
+                    <div class="cc-hero-title">Find recipes you'll<br>actually love</div>
+                    <div class="cc-search-row">
+                      <i class="fas fa-search" style="color:rgba(255,255,255,0.3);font-size:0.6rem"></i>
+                      <span>Search by ingredient or cuisine…</span>
+                      <div class="cc-search-btn">Search</div>
+                    </div>
+                  </div>
+
+                  <div class="cc-hero-visual">
+                    <span class="cc-emoji">🍜</span>
+                    <div class="cc-recipe-card">
+                      <div class="cc-recipe-name">Spicy Ramen</div>
+                      <div class="cc-recipe-time">⏱ 35 min</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cc-features-bar">
+                  <div class="cc-feat-item"><span class="cc-feat-icon">🗓️</span>Meal Planner</div>
+                  <div class="cc-feat-item"><span class="cc-feat-icon">🥦</span>Pantry</div>
+                  <div class="cc-feat-item"><span class="cc-feat-icon">🛒</span>Shopping List</div>
+                  <div class="cc-feat-item"><span class="cc-feat-icon">🤖</span>AI Suggest</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type">Featured Project</span>
+              <span class="project-status">Live</span>
+            </div>
+            <h3 class="project-title">Culinary Compass</h3>
+            <p class="project-desc">
+              An AI-powered recipe discovery and meal planning platform built from scratch.
+              Features ingredient-based recipe search, a weekly drag-and-drop meal planner,
+              pantry tracking, shopping list generation, and AI-driven recipe suggestions.
+              Built with PHP/Symfony on the backend and vanilla JavaScript on the frontend,
+              with a custom REST API integration.
+            </p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>Symfony</span>
+              <span>JavaScript</span>
+              <span>Python / AI</span>
+              <span>MySQL</span>
+              <span>CSS3</span>
+              <span>REST API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://culinarycompass.co.uk" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fas fa-external-link-alt"></i> View Live
+              </a>
+              <a href="https://github.com/abdullahijamal" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small project 2 -->
+        <div class="project-card project-sm reveal stagger-2">
+          <div class="project-preview-sm">
+            <div class="project-icon-display">📊</div>
+          </div>
+          <div class="project-info-sm">
+            <h3 class="project-title-sm">Monthly Tracker</h3>
+            <p class="project-desc-sm">
+              A Symfony-based personal finance and activity tracker with Doctrine ORM, user authentication,
+              migrations, and a Stimulus/Twig frontend — built end-to-end as a solo project.
+            </p>
+            <div class="project-tech" style="margin-top:0.3rem">
+              <span>Symfony</span><span>Doctrine</span><span>Twig</span><span>Stimulus</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Let's talk</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <p class="contact-intro">
+            Whether you have a role in mind, a project to discuss, or just want to say hi —
+            my inbox is always open. I'm especially keen on opportunities combining development,
+            automation, and real-world impact.
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:abdullahijamal08@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">abdullahijamal08@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/abdullahijamal" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/abdullahijamal</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/abdullahijamal" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">github.com/abdullahijamal</div>
+              </div>
+            </a>
+
+            <a href="https://culinarycompass.co.uk" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <div class="contact-label">Portfolio Site</div>
+                <div class="contact-value">culinarycompass.co.uk</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me more…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">AJ<span class="logo-dot">.</span></span>
+        <span class="footer-text">&copy; 2026 Abdullahi Jamal. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
