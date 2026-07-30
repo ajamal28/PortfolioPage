@@ -840,176 +840,6 @@ ul { list-style: none; }
   opacity: 0.85;
 }
 
-/* ---- Browser Mockup (CulinaryCompass) ---- */
-.browser-mockup {
-  width: 100%;
-  max-width: 480px;
-  background: #1a1e2e;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-}
-
-.browser-bar {
-  background: #252836;
-  padding: 9px 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.browser-dots { display: flex; gap: 5px; }
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.dot-red { background: #ff5f57; }
-.dot-yellow { background: #febc2e; }
-.dot-green { background: #28c840; }
-
-.browser-url {
-  background: #1a1e2e;
-  border-radius: 4px;
-  padding: 3px 10px;
-  color: #64748b;
-  font-size: 0.65rem;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  flex: 1;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.browser-url i { color: #28c840; font-size: 0.55rem; }
-
-/* CulinaryCompass site clone */
-.cc-site { background: linear-gradient(160deg, #1E1B2E 0%, #2d2e3d 100%); }
-
-.cc-nav-bar {
-  background: rgba(22, 23, 33, 0.98);
-  padding: 7px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.cc-brand {
-  font-weight: 700;
-  color: #fff;
-  font-size: 0.7rem;
-}
-
-.cc-nav-items {
-  display: flex;
-  gap: 10px;
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.55);
-  align-items: center;
-}
-
-.cc-ai-pill {
-  background: linear-gradient(90deg, #FF6B35, #FF9A5C);
-  color: white;
-  padding: 1px 7px;
-  border-radius: 3px;
-  font-weight: 700;
-  font-size: 0.55rem;
-}
-
-.cc-hero-area {
-  padding: 18px 14px 14px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.cc-hero-left { flex: 1; }
-
-.cc-tag-badge {
-  background: rgba(6, 201, 160, 0.15);
-  border: 1px solid rgba(6, 201, 160, 0.3);
-  color: #06C9A0;
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 0.55rem;
-  font-weight: 700;
-  display: inline-block;
-  margin-bottom: 7px;
-}
-
-.cc-hero-title {
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-.cc-search-row {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  padding: 5px 8px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.58rem;
-}
-
-.cc-search-row span { color: rgba(255, 255, 255, 0.35); flex: 1; }
-
-.cc-search-btn {
-  background: #FF6B35;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 3px;
-  font-weight: 700;
-  font-size: 0.56rem;
-}
-
-.cc-hero-visual {
-  width: 76px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.cc-emoji { font-size: 2.4rem; display: block; margin-bottom: 4px; }
-
-.cc-recipe-card {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 5px;
-  padding: 4px 6px;
-}
-
-.cc-recipe-name { color: #fff; font-weight: 600; font-size: 0.58rem; margin-bottom: 1px; }
-.cc-recipe-time { color: rgba(255, 255, 255, 0.45); font-size: 0.52rem; }
-
-.cc-features-bar {
-  padding: 9px 14px;
-  display: flex;
-  gap: 6px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.cc-feat-item {
-  flex: 1;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.56rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-
-.cc-feat-item .cc-feat-icon { font-size: 0.85rem; }
-
 /* Project info panel */
 .project-info {
   padding: 2.5rem;
@@ -1292,6 +1122,32 @@ ul { list-style: none; }
 .stagger-2 { transition-delay: 0.2s; }
 .stagger-3 { transition-delay: 0.3s; }
 .stagger-4 { transition-delay: 0.4s; }
+
+/* Monthly Tracker preview */
+.finance-preview { background: radial-gradient(circle at 20% 20%, rgba(0,212,255,.14), transparent 36%), var(--bg-surface-2); }
+.finance-window { width:100%; max-width:480px; padding:1.4rem; background:rgba(5,13,26,.94); border:1px solid rgba(0,212,255,.17); border-radius:16px; box-shadow:var(--shadow-lg); }
+.finance-window-top,.finance-stats { display:flex; justify-content:space-between; gap:.7rem; }
+.finance-brand { color:var(--text); font-weight:800; }
+.finance-brand i { color:var(--primary); margin-right:.3rem; }
+.finance-month { color:var(--text-muted); font-size:.7rem; }
+.finance-balance { padding:1.5rem 0 1.1rem; display:grid; gap:.2rem; }
+.finance-balance span,.finance-stats span { color:var(--text-muted); font-size:.68rem; }
+.finance-balance strong { color:#fff; font-size:1.8rem; letter-spacing:-.04em; }
+.finance-balance small { color:var(--accent); font-size:.66rem; }
+.finance-stats div { flex:1; padding:.7rem; background:var(--bg-surface); border-radius:8px; }
+.finance-stats strong { display:block; margin-top:.2rem; font-size:.75rem; }
+.finance-chart { height:70px; display:flex; align-items:end; gap:8px; margin-top:1rem; }
+.finance-chart i { flex:1; min-height:10px; border-radius:4px 4px 1px 1px; background:linear-gradient(to top,var(--secondary),var(--primary)); opacity:.75; }
+.project-status-private { background:var(--secondary-dim); color:#a78bfa; border-color:rgba(167,139,250,.25); }
+.project-highlights { display:grid; gap:.55rem; color:var(--text-dim); font-size:.82rem; }
+.project-highlights i { width:1.3rem; color:var(--accent); }
+.form-group input:invalid:not(:placeholder-shown),.form-group textarea:invalid:not(:placeholder-shown) { border-color:rgba(248,113,113,.55); }
+.form-honeypot { position:absolute !important; left:-9999px !important; }
+.form-status { min-height:1.4rem; margin:-.35rem 0 .85rem; font-size:.8rem; color:var(--text-dim); }
+.form-status.is-error { color:#f87171; }
+.form-status.is-sending { color:var(--primary); }
+.form-note { margin-top:.85rem; color:var(--text-muted); font-size:.72rem; text-align:center; }
+.form-note i { margin-right:.25rem; }
 
 /* ==============================
    RESPONSIVE

@@ -148,26 +148,21 @@
   var form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
+      var status = document.getElementById('formStatus');
+      var btn = this.querySelector('button[type="submit"]');
 
-      var btn         = this.querySelector('button[type="submit"]');
-      var originalHTML = btn.innerHTML;
+      if (!this.checkValidity()) {
+        e.preventDefault();
+        this.reportValidity();
+        status.textContent = 'Please complete all fields correctly.';
+        status.className = 'form-status is-error';
+        return;
+      }
 
+      status.textContent = 'Sending your message securely…';
+      status.className = 'form-status is-sending';
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
-      btn.disabled  = true;
-
-      // Simulate submission — wire up to a backend/service as needed
-      setTimeout(function () {
-        btn.innerHTML         = '<i class="fas fa-check"></i> Message Sent!';
-        btn.style.background  = 'var(--accent)';
-
-        setTimeout(function () {
-          btn.innerHTML        = originalHTML;
-          btn.style.background = '';
-          btn.disabled         = false;
-          form.reset();
-        }, 3000);
-      }, 1500);
+      btn.disabled = true;
     });
   }
 
